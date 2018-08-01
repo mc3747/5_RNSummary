@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     self.title = @"ReactNative学习摘要";
-    self.titleArray = @[@"1_项目结构",@"2_Props,State,PropType关键字",@"3_基础组件&布局",@"4_生命周期",@"5_传值",@"6_高级组件",@"7_自定义组件",@"8_页面跳转",@"9_网络",@"10_数据存储",@"11_第三方组件"];
+    self.titleArray = @[@"1_项目结构",@"2_Props,State,PropType关键字",@"3_传值",@"4_生命周期",@"5_基础组件&布局",@"6_高级组件",@"7_自定义组件",@"8_页面跳转",@"9_网络",@"10_数据存储",@"11_第三方组件"];
     [self.view addSubview:self.tableView];
     [super viewDidLoad];
 }
@@ -105,11 +105,26 @@
         vc.jsNumberArray = @[@"4",@"5",@"6"];
         
     }else if (indexPath.row == 2) {
-//        vc.subtitleArray = @[@"props",@"state"];
-//        vc.jsNumberArray = @[@"5",@"6"];
+        vc.subtitleArray = @[@"父传子1",@"父传子2",@"子传父",@"兄传弟"];
+        vc.jsNumberArray = @[@"7",@"8",@"9",@"10"];
+        
     }else if (indexPath.row == 3) {
+        vc.subtitleArray = @[@"生命周期"];
+        vc.jsNumberArray = @[@"11"];
         
     }else if (indexPath.row == 4) {
+      
+    }else if (indexPath.row == 5) {
+        
+    }else if (indexPath.row == 6) {
+        
+    }else if (indexPath.row == 7) {
+        
+    }else if (indexPath.row == 8) {
+        
+    }else if (indexPath.row == 9) {
+        
+    }else if (indexPath.row == 10) {
         
     };
     [self.navigationController pushViewController:vc animated:YES];
