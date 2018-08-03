@@ -1,13 +1,13 @@
-import React, { Component,PropTypes} from 'react';
-
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import {
     AppRegistry,
     StyleSheet,
     Text,
     View,
     Image,
-    TouchableOpacity
-
+    TouchableOpacity,
+    ImageSourcePropType
 } from 'react-native';
 /* 
 目标：
@@ -15,29 +15,36 @@ import {
 2，高亮文字
 3，高亮背景图片
 4，高亮透明度
+5，注意PropTypes的导入形式
+6,传本地图片，require不接受变量，需要在外边引用处，一并传入
 */
 export default class CommonHighButtonButton extends Component {
 
     static propTypes = {
         // 普通状态
         title:PropTypes.string,
-        imageUri:PropTypes.string,
-        titleStyle:PropTypes.string,
-        imageStyle:PropTypes.object,
+        titleStyle:PropTypes.object,
+        imageLocal:ImageSourcePropType, 
+        imageUri:PropTypes.string,//
+        imageStyle:PropTypes.object,//
 
         // 高亮状态
-        highImageUri:PropTypes.string,
-        highTitleStyle:PropTypes.object,
+        highImageLocal:ImageSourcePropType,
+        highImageUri:PropTypes.string,//
+        highTitleStyle:PropTypes.object,//
 
         // 监听点击
         onPressIn:PropTypes.func,
         onPressOut:PropTypes.func,
 
         // 按钮样式
-        buttonStyle:PropTypes.string
+        buttonStyle:PropTypes.object
 
     };
-
+componetWillMount() {
+    console.log(' mount' + this.props);
+    
+}
     constructor(props){
         super(props);
 
@@ -68,14 +75,21 @@ export default class CommonHighButtonButton extends Component {
                                   }
                                 }
                               }
-                              activeOpacity={this.props.highTitleStyle || this.props.highImageUri?0.9:0.3}
+                              activeOpacity={this.props.highTitleStyle || this.props.highImageUri || this.props.highImageLocal?0.9:0.3}
             >
 
                 {/*文字*/}
                 {this.props.title?<Text style={[this.props.titleStyle,this.state.highLighted?this.props.highTitleStyle:null]}>{this.props.title}</Text>:null}
+               
+                {/*图片：本地资源*/}
+                {/* console.log(this.props.imageUri); */}
+                {this.props.imageLocal?<Image source={this.state.highLighted && this.props.highImageLocal?this.props.highImageLocal:this.props.imageLocal}
+                style={[styles.imageStyle,this.props.imageStyle]}/> : null}
 
-                {/*头像*/}
-                {this.props.imageUri?<Image source={{uri:this.state.highLighted && this.props.highImageUri?this.props.highImageUri:this.props.imageUri}} style={[styles.imageStyle,this.props.imageStyle]}/> : null}
+                {/*图片：网络资源*/}
+                {this.props.imageUri?<Image source={{uri:this.state.highLighted && this.props.highImageUri?this.props.highImageUri:this.props.imageUri}} 
+                style={[styles.imageStyle,this.props.imageStyle]}/> : null}
+
 
             </TouchableOpacity>
         );

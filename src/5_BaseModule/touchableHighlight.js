@@ -42,6 +42,9 @@ const onShowUnderlay = () => {
 
 export default class touchableHighlight extends Component {
     render() {
+
+        const image1 =  require('../0_Resources/Image/delete-1.png');
+        const image2 =  require('../0_Resources/Image/delete-2.png');
         return (
             <View style = {styles.viewStyle1}>
                 <View style = {{justifyContent:"center",
@@ -56,11 +59,14 @@ export default class touchableHighlight extends Component {
                        </TouchableHighlight>
 
                        <CommonHighButtonButton 
-                              imageUri='delete-1'
-                              imageStyle={{width:20,height:20}}
-                              title='按钮'
-                              highImageUri='delete-2'
-                              highTitleStyle={{color:'red'}}
+                            imageLocal={image1}
+                            highImageLocal={image2}
+                            title='按钮'
+                            //   imageUri='http://image.zhangxinxu.com/image/study/s/s256/mm3.jpg'
+                              imageStyle={{width:50,height:50}}
+                            //   highImageUri='http://image.zhangxinxu.com/image/study/s/s256/mm4.jpg'
+                              titleStyle={{color:'blue',backgroundColor:'yellow'}}
+                              highTitleStyle={{color:'red',backgroundColor:'#f78ae0'}}
                             />
 
 
