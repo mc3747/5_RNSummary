@@ -18,6 +18,7 @@ import {
         style={styles.logo}
         source={{uri: 'http://facebook.github.io/react/img/logo_og.png'}}
       />
+3,可以统一使用uri引用图片方法，本地图片，直接写入图片名称，前提是在xcode目录中能够存在该图片
 3，style属性
 */
 export default class button extends Component {
@@ -26,7 +27,8 @@ export default class button extends Component {
             <View style = {styles.viewStyle1}>
                     <Image
                         style={styles.icon}
-                        source={require('../0_Resources/Image/delete-1.png')}
+                        // source={require('../0_Resources/Image/delete-1.png')}
+                        source={{uri:'delete-1'}}
                     />
             </View>
      

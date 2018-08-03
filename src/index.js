@@ -20,6 +20,8 @@ import button from "./5_BaseModule/button";
 import image from "./5_BaseModule/image";
 import textInput from "./5_BaseModule/textInput";
 import touchableHighlight from "./5_BaseModule/touchableHighlight";
+import css from "./6_Layout/css";
+import flex from "./6_Layout/flex";
 
 // 注册整体js模块的名称 + js输出的名称
 AppRegistry.registerComponent("RNDemo1", () => inlineStyle);
@@ -39,3 +41,5 @@ AppRegistry.registerComponent("RNDemo14", () => button);
 AppRegistry.registerComponent("RNDemo15", () => image);
 AppRegistry.registerComponent("RNDemo16", () => textInput);
 AppRegistry.registerComponent("RNDemo17", () => touchableHighlight);
+AppRegistry.registerComponent("RNDemo18", () => css);
+AppRegistry.registerComponent("RNDemo19", () => flex);

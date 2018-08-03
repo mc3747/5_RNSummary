@@ -42,7 +42,9 @@ const onShowUnderlay = () => {
 
 export default class touchableHighlight extends Component {
     render() {
-
+/* 
+注意：按钮高亮变换本地图片，需要外边传require进去
+*/
         const image1 =  require('../0_Resources/Image/delete-1.png');
         const image2 =  require('../0_Resources/Image/delete-2.png');
         return (

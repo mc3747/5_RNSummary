@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     self.title = @"ReactNative学习摘要";
-    self.titleArray = @[@"1_项目结构",@"2_Props,State,PropType关键字",@"3_传值",@"4_生命周期",@"5_基础组件",@"6_布局",@"7_高级组件",@"8_自定义组件",@"9_页面跳转",@"10_网络",@"11_数据存储",@"12_第三方组件"];
+    self.titleArray = @[@"1_项目结构",@"2_Props,State,PropType关键字",@"3_传值",@"4_生命周期",@"5_基础组件",@"6_布局",@"7_JSX编码规范",@"8_高级组件",@"9_自定义组件",@"10_页面跳转",@"11_网络",@"12_数据存储",@"13_第三方组件"];
     [self.view addSubview:self.tableView];
     [super viewDidLoad];
 }
@@ -118,6 +118,8 @@
         
         
     }else if (indexPath.row == 5) {
+        vc.subtitleArray = @[@"css布局",@"flex布局"];
+        vc.jsNumberArray = @[@"18",@"19"];
         
     }else if (indexPath.row == 6) {
         
