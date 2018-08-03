@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-import {StackNavigator, createNavigator, createNavigationContainer, TabRouter, addNavigationHelpers} from 'react-navigation';
+import {StackNavigator, createNavigator, createNavigationContainer, TabRouter, addNavigationHelpers} from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react-navigation';
 import Page1 from "./Page1";
 import Page2 from "./Page2";
 import Page3 from "./Page3";
