@@ -6,7 +6,6 @@ import{AppRegistry} from "react-native";
 import inlineStyle from "./1_ProjectStructure/inlineStyle";
 import targetStyle from "./1_ProjectStructure/targetStyle";
 import outsideStyle from "./1_ProjectStructure/outsideStyle";
-import tabBarView from "./Tab/tabBarView";
 import props from "./2_KeyWords/props";
 import state from "./2_KeyWords/state";
 import fatherToSon1 from "./3_DelieveValue/fatherToSon1";
@@ -24,12 +23,19 @@ import css from "./6_Layout/css";
 import flex from "./6_Layout/flex";
 import listView1 from "./8_AdvancedModule/ListView1/listView1";
 import listView2 from "./8_AdvancedModule/ListView2/listView2";
+import listView3 from "./8_AdvancedModule/ListView3/listView3";
+import listView4 from "./8_AdvancedModule/ListView4/listView4";
+import tabBar1 from "./8_AdvancedModule/TabBar1/JYFTabBar";
+import tabBar2 from "./8_AdvancedModule/TabBar2/tabBarView";
+import tabBar3 from "./8_AdvancedModule/TabBar3/MainScreen";
+import navigator1 from "./8_AdvancedModule/Navigator1/navigator1";
+
 
 // 注册整体js模块的名称 + js输出的名称
 AppRegistry.registerComponent("RNDemo1", () => inlineStyle);
 AppRegistry.registerComponent("RNDemo2", () => targetStyle);
 AppRegistry.registerComponent("RNDemo3", () => outsideStyle);
-AppRegistry.registerComponent("RNDemo4", () => tabBarView);
+// AppRegistry.registerComponent("RNDemo4", () => tabBarView);
 AppRegistry.registerComponent("RNDemo5", () => props);
 AppRegistry.registerComponent("RNDemo6", () => state);
 AppRegistry.registerComponent("RNDemo7", () => fatherToSon1);
@@ -47,3 +53,9 @@ AppRegistry.registerComponent("RNDemo18", () => css);
 AppRegistry.registerComponent("RNDemo19", () => flex);
 AppRegistry.registerComponent("RNDemo20", () => listView1);
 AppRegistry.registerComponent("RNDemo21", () => listView2);
+AppRegistry.registerComponent("RNDemo22", () => listView3);
+AppRegistry.registerComponent("RNDemo23", () => listView4);
+AppRegistry.registerComponent("RNDemo24", () => tabBar1);
+AppRegistry.registerComponent("RNDemo25", () => tabBar2);
+AppRegistry.registerComponent("RNDemo26", () => tabBar3);
+AppRegistry.registerComponent("RNDemo27", () => navigator1);

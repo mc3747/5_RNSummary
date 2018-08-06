@@ -81,7 +81,7 @@ export const others = [
 ];
 
 export default class SectionListScreen extends Component {
-  
+  // 初始化数据源
   constructor(props) {
     super(props);
     let ds = new ListView.DataSource({
@@ -93,7 +93,7 @@ export default class SectionListScreen extends Component {
       dataSource: ds.cloneWithRowsAndSections(data)
     }
   }
-  
+  // 主调用render
   render() {
     return (
       <View style={{flex: 1}}>
@@ -105,7 +105,8 @@ export default class SectionListScreen extends Component {
       </View>
     )
   }
-  
+
+  // 自定义cell
   _renderRow = (item, sectionId) => {
     let sectionIndex = Number(sectionId);
     if (sectionIndex === 2) {
@@ -131,7 +132,8 @@ export default class SectionListScreen extends Component {
       </TouchableOpacity>
     )
   };
-  
+
+  // 自定义header
   _renderSectionHeader = (sectionData, sectionId) => {
     let sectionIndex = Number(sectionId);
     let category = '';
@@ -154,6 +156,7 @@ export default class SectionListScreen extends Component {
   };
 }
 
+// 样式
 export const styles = StyleSheet.create({
   sectionHeader: {
     padding: 10,

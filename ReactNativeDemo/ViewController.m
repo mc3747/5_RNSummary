@@ -101,8 +101,8 @@
         vc.jsNumberArray = @[@"1",@"2",@"3"];
         
     }else if (indexPath.row == 1) {
-        vc.subtitleArray = @[@"导航测试",@"props",@"state"];
-        vc.jsNumberArray = @[@"4",@"5",@"6"];
+        vc.subtitleArray = @[@"props",@"state"];
+        vc.jsNumberArray = @[@"5",@"6"];
         
     }else if (indexPath.row == 2) {
         vc.subtitleArray = @[@"父传子1",@"父传子2",@"子传父",@"兄传弟"];
@@ -125,8 +125,8 @@
         
         
     }else if (indexPath.row == 7) {
-        vc.subtitleArray = @[@"listView1",@"listView2"];
-        vc.jsNumberArray = @[@"20",@"21"];
+        vc.subtitleArray = @[@"listView1",@"listView2",@"listView3",@"listView4",@"tabBar1",@"tabBar2",@"tabBar3",@"navigator1"];
+        vc.jsNumberArray = @[@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27"];
         
     }else if (indexPath.row == 8) {
         

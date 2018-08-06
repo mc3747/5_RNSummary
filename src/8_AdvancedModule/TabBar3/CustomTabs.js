@@ -1,10 +1,11 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-import {StackNavigator, createNavigator, createNavigationContainer, TabRouter, addNavigationHelpers} from '../../../../../Library/Caches/typescript/2.9/node_modules/@types/react-navigation';
+import {StackNavigator, createNavigator, createNavigationContainer, TabRouter, addNavigationHelpers} from 'react-navigation';
 import Page1 from "./Page1";
 import Page2 from "./Page2";
 import Page3 from "./Page3";
 import Page4 from "./Page4";
+import DetailPage from "./DetailPage";
 
 const FirstNavScreen = StackNavigator(
   {
@@ -14,6 +15,12 @@ const FirstNavScreen = StackNavigator(
         headerTitle: '首页'
       })
     },
+    Detail: {
+      screen: DetailPage,
+      navigationOptions:({navigation}) => ({
+        headerTitle: '详情页'
+      })
+    }
   },
   {
     navigationOptions: {
@@ -110,7 +117,6 @@ const MyFourthScreen = ({navigation}) => (
   <FourthNavScreen/>
 );
 
-// tabBar控制器
 const CustomTabRouter = TabRouter(
   {
     First: {
@@ -134,7 +140,7 @@ const CustomTabRouter = TabRouter(
     initialRouteName: 'First',
   }
 );
-// CustomTabBar
+
 const CustomTabBar = ({navigation, activeRoute}) => {
   const { routes } = navigation.state;
   console.log(routes);
@@ -151,7 +157,7 @@ const CustomTabBar = ({navigation, activeRoute}) => {
     </View>
   );
 };
-// CustomTabView
+
 const CustomTabView = ({ router, navigation }) => {
   const { routes, index } = navigation.state;
   const ActiveScreen = router.getComponentForRouteName(routes[index].routeName);
@@ -173,13 +179,13 @@ const CustomTabView = ({ router, navigation }) => {
   )
 };
 
-// 输出
 const CustomTabs = createNavigationContainer(
   createNavigator(CustomTabRouter)(CustomTabView)
 );
+
 export default CustomTabs;
 
-// 样式
+
 const styles = StyleSheet.create({
   tabContainer: {
     width: 84,
