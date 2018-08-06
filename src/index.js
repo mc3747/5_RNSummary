@@ -22,6 +22,8 @@ import textInput from "./5_BaseModule/textInput";
 import touchableHighlight from "./5_BaseModule/touchableHighlight";
 import css from "./6_Layout/css";
 import flex from "./6_Layout/flex";
+import listView1 from "./8_AdvancedModule/ListView1/listView1";
+import listView2 from "./8_AdvancedModule/ListView2/listView2";
 
 // 注册整体js模块的名称 + js输出的名称
 AppRegistry.registerComponent("RNDemo1", () => inlineStyle);
@@ -43,3 +45,5 @@ AppRegistry.registerComponent("RNDemo16", () => textInput);
 AppRegistry.registerComponent("RNDemo17", () => touchableHighlight);
 AppRegistry.registerComponent("RNDemo18", () => css);
 AppRegistry.registerComponent("RNDemo19", () => flex);
+AppRegistry.registerComponent("RNDemo20", () => listView1);
+AppRegistry.registerComponent("RNDemo21", () => listView2);

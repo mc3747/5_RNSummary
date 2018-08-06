@@ -7,7 +7,7 @@ TouchableHighlight,
   Alert
 } from 'react-native';
 // import moduleName from '../0_Resources/Image/'
-import CommonHighButtonButton from '../8_SelfDefineModule/commonHighlightButton'
+import CommonHighButtonButton from '../9_SelfDefineModule/commonHighlightButton'
 /* 
 1,具有view的所有style属性，并扩展underlayColor string #
 有触摸操作时显示出来的底层的颜色。

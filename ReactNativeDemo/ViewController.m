@@ -123,7 +123,10 @@
         
     }else if (indexPath.row == 6) {
         
+        
     }else if (indexPath.row == 7) {
+        vc.subtitleArray = @[@"listView1",@"listView2"];
+        vc.jsNumberArray = @[@"20",@"21"];
         
     }else if (indexPath.row == 8) {
         
