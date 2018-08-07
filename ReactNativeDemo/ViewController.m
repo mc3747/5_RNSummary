@@ -125,8 +125,8 @@
         
         
     }else if (indexPath.row == 7) {
-        vc.subtitleArray = @[@"listView1",@"listView2",@"listView3",@"listView4",@"tabBar1",@"tabBar2",@"tabBar3",@"navigator1"];
-        vc.jsNumberArray = @[@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27"];
+        vc.subtitleArray = @[@"listView1",@"listView2",@"listView3",@"listView4",@"tabBar1",@"tabBar2",@"tabBar3",@"navigator1",@"navigator2",@"scrollView1"];
+        vc.jsNumberArray = @[@"20",@"21",@"22",@"23",@"24",@"25",@"26",@"27",@"28",@"29"];
         
     }else if (indexPath.row == 8) {
         
