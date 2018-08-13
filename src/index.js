@@ -31,6 +31,7 @@ import tabBar3 from "./8_AdvancedModule/TabBar3/MainScreen";
 import navigator1 from "./8_AdvancedModule/Navigator1/navigator1";
 import navigator2 from "./8_AdvancedModule/Navigator2/navigator2";
 import scrollView1 from "./8_AdvancedModule/ScrollView1/scrollView1";
+import RnCallNative from "./10_RnCallNative/RnCallNative";
 
 // 注册整体js模块的名称 + js输出的名称
 AppRegistry.registerComponent("RNDemo1", () => inlineStyle);
@@ -62,3 +63,4 @@ AppRegistry.registerComponent("RNDemo26", () => tabBar3);
 AppRegistry.registerComponent("RNDemo27", () => navigator1);
 AppRegistry.registerComponent("RNDemo28", () => navigator2);
 AppRegistry.registerComponent("RNDemo29", () => scrollView1);
+AppRegistry.registerComponent("RNDemo30", () => RnCallNative);

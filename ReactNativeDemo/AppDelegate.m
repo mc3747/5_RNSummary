@@ -20,7 +20,7 @@
     ViewController *VC = [[ViewController alloc] init];
     UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:VC];
     naviVC.navigationBar.barTintColor = [UIColor blueColor];
-    naviVC.hidesBarsOnSwipe = YES;
+//    naviVC.hidesBarsOnSwipe = YES;
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = naviVC;
     [self.window makeKeyAndVisible];

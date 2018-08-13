@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4267070921211D8800046FE6 /* RCSubEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267070621211D8700046FE6 /* RCSubEventEmitter.m */; };
+		4267070A21211D8800046FE6 /* RNCalliOSAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267070721211D8700046FE6 /* RNCalliOSAction.m */; };
+		4267071621211E6100046FE6 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267070C21211E6100046FE6 /* SVRadialGradientLayer.m */; };
+		4267071721211E6100046FE6 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267070F21211E6100046FE6 /* SVProgressAnimatedView.m */; };
+		4267071821211E6100046FE6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071221211E6100046FE6 /* SVProgressHUD.m */; };
+		4267071921211E6100046FE6 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071321211E6100046FE6 /* SVIndefiniteAnimatedView.m */; };
+		4267071A21211E6100046FE6 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4267071421211E6100046FE6 /* SVProgressHUD.bundle */; };
 		42DA93EB210FF901001C8B3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DA93EA210FF901001C8B3E /* AppDelegate.m */; };
 		42DA93EE210FF901001C8B3E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DA93ED210FF901001C8B3E /* ViewController.m */; };
 		42DA93F1210FF901001C8B3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DA93EF210FF901001C8B3E /* Main.storyboard */; };
@@ -39,6 +46,20 @@
 
 /* Begin PBXFileReference section */
 		268FAF762A1AC97D249A4F8B /* Pods-ReactNativeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativeDemo/Pods-ReactNativeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4267070521211D8700046FE6 /* RCSubEventEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSubEventEmitter.h; sourceTree = "<group>"; };
+		4267070621211D8700046FE6 /* RCSubEventEmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSubEventEmitter.m; sourceTree = "<group>"; };
+		4267070721211D8700046FE6 /* RNCalliOSAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCalliOSAction.m; sourceTree = "<group>"; };
+		4267070821211D8800046FE6 /* RNCalliOSAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCalliOSAction.h; sourceTree = "<group>"; };
+		4267070C21211E6100046FE6 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		4267070D21211E6100046FE6 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		4267070E21211E6100046FE6 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		4267070F21211E6100046FE6 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		4267071021211E6100046FE6 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		4267071121211E6100046FE6 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		4267071221211E6100046FE6 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		4267071321211E6100046FE6 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		4267071421211E6100046FE6 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		4267071521211E6100046FE6 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
 		42DA93E6210FF901001C8B3E /* ReactNativeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DA93E9210FF901001C8B3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42DA93EA210FF901001C8B3E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +127,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4267070421211D6C00046FE6 /* RnCallNative */ = {
+			isa = PBXGroup;
+			children = (
+				4267070B21211E6100046FE6 /* SVProgressHUD */,
+				4267070521211D8700046FE6 /* RCSubEventEmitter.h */,
+				4267070621211D8700046FE6 /* RCSubEventEmitter.m */,
+				4267070821211D8800046FE6 /* RNCalliOSAction.h */,
+				4267070721211D8700046FE6 /* RNCalliOSAction.m */,
+			);
+			path = RnCallNative;
+			sourceTree = "<group>";
+		};
+		4267070B21211E6100046FE6 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4267070C21211E6100046FE6 /* SVRadialGradientLayer.m */,
+				4267070D21211E6100046FE6 /* SVIndefiniteAnimatedView.h */,
+				4267070E21211E6100046FE6 /* SVProgressHUD.h */,
+				4267070F21211E6100046FE6 /* SVProgressAnimatedView.m */,
+				4267071021211E6100046FE6 /* SVProgressHUD-Prefix.pch */,
+				4267071121211E6100046FE6 /* SVRadialGradientLayer.h */,
+				4267071221211E6100046FE6 /* SVProgressHUD.m */,
+				4267071321211E6100046FE6 /* SVIndefiniteAnimatedView.m */,
+				4267071421211E6100046FE6 /* SVProgressHUD.bundle */,
+				4267071521211E6100046FE6 /* SVProgressAnimatedView.h */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		42DA93DD210FF901001C8B3E = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +181,7 @@
 		42DA93E8210FF901001C8B3E /* ReactNativeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4267070421211D6C00046FE6 /* RnCallNative */,
 				42DA943421100186001C8B3E /* Demo_ViewController.h */,
 				42DA943321100186001C8B3E /* Demo_ViewController.m */,
 				42DA94362110066C001C8B3E /* Common_ViewController.h */,
@@ -273,6 +324,7 @@
 				42DA93F6210FF903001C8B3E /* LaunchScreen.storyboard in Resources */,
 				42DA93F3210FF903001C8B3E /* Assets.xcassets in Resources */,
 				42DA93F1210FF901001C8B3E /* Main.storyboard in Resources */,
+				4267071A21211E6100046FE6 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,9 +371,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DA94382110066C001C8B3E /* Common_ViewController.m in Sources */,
+				4267070A21211D8800046FE6 /* RNCalliOSAction.m in Sources */,
+				4267070921211D8800046FE6 /* RCSubEventEmitter.m in Sources */,
+				4267071621211E6100046FE6 /* SVRadialGradientLayer.m in Sources */,
 				42DA93EE210FF901001C8B3E /* ViewController.m in Sources */,
+				4267071721211E6100046FE6 /* SVProgressAnimatedView.m in Sources */,
 				42DA93F9210FF903001C8B3E /* main.m in Sources */,
+				4267071821211E6100046FE6 /* SVProgressHUD.m in Sources */,
 				42DA93EB210FF901001C8B3E /* AppDelegate.m in Sources */,
+				4267071921211E6100046FE6 /* SVIndefiniteAnimatedView.m in Sources */,
 				42DA943521100186001C8B3E /* Demo_ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

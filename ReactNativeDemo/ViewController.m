@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     self.title = @"ReactNative学习摘要";
-    self.titleArray = @[@"1_项目结构",@"2_Props,State,PropType关键字",@"3_传值",@"4_生命周期",@"5_基础组件",@"6_布局",@"7_JSX编码规范",@"8_高级组件",@"9_自定义组件",@"10_页面跳转",@"11_网络",@"12_数据存储",@"13_第三方组件"];
+    self.titleArray = @[@"1_项目结构",@"2_Props,State,PropType关键字",@"3_传值",@"4_生命周期",@"5_基础组件",@"6_布局",@"7_JSX编码规范",@"8_高级组件",@"9_自定义组件",@"10_页面跳转",@"11_网络",@"12_数据存储",@"13_第三方组件",@"14_调用原生"];
     [self.view addSubview:self.tableView];
     [super viewDidLoad];
 }
@@ -134,6 +134,13 @@
         
     }else if (indexPath.row == 10) {
         
+    }else if (indexPath.row == 11) {
+        
+    }else if (indexPath.row == 12) {
+        
+    }else if (indexPath.row == 13) {
+        vc.subtitleArray = @[@"调用原生"];
+        vc.jsNumberArray = @[@"30"];
     };
     [self.navigationController pushViewController:vc animated:YES];
     
