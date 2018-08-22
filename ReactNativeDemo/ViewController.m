@@ -101,8 +101,8 @@
         vc.jsNumberArray = @[@"1",@"2",@"3"];
         
     }else if (indexPath.row == 1) {
-        vc.subtitleArray = @[@"props",@"state"];
-        vc.jsNumberArray = @[@"5",@"6"];
+        vc.subtitleArray = @[@"props",@"state",@"propsType"];
+        vc.jsNumberArray = @[@"5",@"6",@"31"];
         
     }else if (indexPath.row == 2) {
         vc.subtitleArray = @[@"父传子1",@"父传子2",@"子传父",@"兄传弟"];
@@ -122,7 +122,8 @@
         vc.jsNumberArray = @[@"18",@"19"];
         
     }else if (indexPath.row == 6) {
-        
+        vc.subtitleArray = @[@"JSX语法"];
+        vc.jsNumberArray = @[@"32"];
         
     }else if (indexPath.row == 7) {
         vc.subtitleArray = @[@"listView1",@"listView2",@"listView3",@"listView4",@"tabBar1",@"tabBar2",@"tabBar3",@"navigator1",@"navigator2",@"scrollView1"];

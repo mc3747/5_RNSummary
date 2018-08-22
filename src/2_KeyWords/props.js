@@ -24,6 +24,7 @@ export default class LotsOfGreetings extends Component {
         <Greeting name='Rexxar' />
         <Greeting name='Jaina' />
         <Greeting name='Valeera' />
+        {/* <Greeting name={true} /> */}
       </View>
     );
   }
