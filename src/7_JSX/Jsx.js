@@ -4,9 +4,12 @@ import {
     StyleSheet,
     Text,
     View,
-    Button
+    Button,
+    ListView
 
 } from 'react-native';
+import developer, {firstname, lastname } from './Jsx1.js';
+import person from './Jsx1.js';
 
 /*1,组件的定义方法（组件方法和函数长得很像）**********/
 // js组件的定义方法
@@ -48,6 +51,7 @@ const getGreeting2 = () => {
 const getGreeting3 = () =>
   'Welcome to JavaScript3';
 
+
  /*3,函数带参数来传递**********/ 
   // JavaScript ES5 函数
 function Greeting4(a) {
@@ -63,6 +67,7 @@ function Greeting4(a) {
 //   可以通过.或者[]来进行设置参数，调用处用字典形式访问
   const Greeting6 = (c) =>
     <Text>{c['greeting']+c.bbb}</Text>
+
 
  /*4,自定义组件方法的改进**********/ 
 //  老的书写方法
@@ -127,8 +132,38 @@ function Greeting4(a) {
     }
   }
 
+
+/*5,React中的模板字面量**********/ 
+// 使用+形参
+function getGreeting5(what) {
+  return 'Welcome to ' + what;
+}
+// 反引号和 ${}来插入 JavaScript 原语
+function getGreeting6(what) {
+  return `Welcome to ${what}`;
+}
+
+
+/*6,从其他文件导入：常用作工具类的引用**********/ 
+/**
+ * 导入步骤：
+ * 1，导入头文件
+ * 2，引用变量
+ */
+
 //   主调函数
 export default class Jsx extends Component {
+  constructor(props) {
+    // 初始化模拟数据
+    super(props);
+    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+    this.state = {
+      dataSource: ds.cloneWithRows([
+        'Kobe', 'Jordan', 'Durant', 'James'
+      ])
+    };
+  }
+
     // 定义属性
     static propTypes = {
         name:PropTypes.string,
@@ -146,7 +181,7 @@ export default class Jsx extends Component {
         var me = new ReactDeveloper('Robin', 'Wieruch');
         var name = me.getName();
         var job = me.getJob();
-        
+        var user = { name: 'Robin' };
 
         return (
             <View style={styles.viewStyle}>
@@ -158,6 +193,16 @@ export default class Jsx extends Component {
                     <Text style={styles.labelStyle}>{Greeting6({'greeting':"99999","bbb":"aaaa"})}</Text>
                     <Counter2 />
                     <H1Module  />
+                    <Text style={styles.labelStyle}>{getGreeting5('字面量1')}</Text>
+                    <Text style={styles.labelStyle}>{getGreeting5('字面量2')}</Text>
+                    <Text style={styles.labelStyle}>{user.name}</Text>
+                    <Text style={styles.labelStyle}>{firstname}</Text>
+                    <Text style={styles.labelStyle}>{person.lastname}</Text>
+                    <ListView 
+
+                      dataSource={this.state.dataSource}
+                      renderRow={(rowData) => <Text>{rowData}</Text>}
+                    />
             </View>
         )
     }
