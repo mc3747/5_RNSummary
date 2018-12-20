@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/ART/Brushes/ARTSolidColor.h
+../../../../node_modules/react-native/Libraries/ART/Brushes/ARTSolidColor.h

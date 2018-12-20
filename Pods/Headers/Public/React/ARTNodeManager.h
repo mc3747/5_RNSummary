@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/ART/ViewManagers/ARTNodeManager.h
+../../../../node_modules/react-native/Libraries/ART/ViewManagers/ARTNodeManager.h

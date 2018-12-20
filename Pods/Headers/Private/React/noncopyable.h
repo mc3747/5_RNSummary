@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/ReactCommon/jschelpers/noncopyable.h
+../../../../node_modules/react-native/ReactCommon/jschelpers/noncopyable.h

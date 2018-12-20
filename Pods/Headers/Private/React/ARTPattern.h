@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/ART/Brushes/ARTPattern.h
+../../../../node_modules/react-native/Libraries/ART/Brushes/ARTPattern.h

@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/ART/ARTShape.h
+../../../../node_modules/react-native/Libraries/ART/ARTShape.h

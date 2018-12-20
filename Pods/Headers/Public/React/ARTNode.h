@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/ART/ARTNode.h
+../../../../node_modules/react-native/Libraries/ART/ARTNode.h

@@ -1,1 +1,1 @@
-../../../../../../node_modules/react-native/Libraries/fishhook/fishhook.h
+../../../../../node_modules/react-native/Libraries/fishhook/fishhook.h

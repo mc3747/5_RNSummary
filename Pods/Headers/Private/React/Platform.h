@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/ReactCommon/cxxreact/Platform.h
+../../../../node_modules/react-native/ReactCommon/cxxreact/Platform.h

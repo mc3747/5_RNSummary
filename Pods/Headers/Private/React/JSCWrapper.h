@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.h
+../../../../node_modules/react-native/ReactCommon/jschelpers/JSCWrapper.h

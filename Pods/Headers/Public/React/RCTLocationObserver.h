@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/Geolocation/RCTLocationObserver.h
+../../../../node_modules/react-native/Libraries/Geolocation/RCTLocationObserver.h

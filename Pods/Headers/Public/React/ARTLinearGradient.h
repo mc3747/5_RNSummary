@@ -1,1 +1,1 @@
-../../../../../node_modules/react-native/Libraries/ART/Brushes/ARTLinearGradient.h
+../../../../node_modules/react-native/Libraries/ART/Brushes/ARTLinearGradient.h
