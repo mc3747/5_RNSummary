@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {
     View,
-    Text
+    Text,
+    Image
 } from 'react-native';
 export default class AdvanceConcept extends Component {
     constructor(props) {
@@ -9,9 +10,23 @@ export default class AdvanceConcept extends Component {
     }
     render() {
             return (
-                <Text style={{backgroundColor:'yellow'}}>
-                    首页
-                </Text>
+                <View>
+                    <Text style={{backgroundColor:'yellow'}}>
+                        首页
+                    </Text>
+                    <Text style={{backgroundColor:'yellow'}}>
+                        首页
+                    </Text>
+                    <Text style={{backgroundColor:'yellow'}}>
+                        首页
+                    </Text>
+                    <Text style={{backgroundColor:'yellow'}}>
+                        首页
+                    </Text>
+                    <Image source={require('AwesomeProject/src/images/tabBar_home_selected.png')} />
+                    <Image source={require('../../images/tabBar_home_selected.png')}/>
+                </View>
+                
             )
         }
 }
