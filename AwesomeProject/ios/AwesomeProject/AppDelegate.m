@@ -53,10 +53,10 @@ static void InitializeFlipper(UIApplication *application) {
 //    return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
   
 //  公司wifi
-//  return [NSURL URLWithString:@"http://10.24.136.238:8081/index.bundle?platform=ios&dev=true"];
+ return [NSURL URLWithString:@"http://10.24.136.238:8081/index.bundle?platform=ios&dev=true"];
   
 //  个人热点
-   return [NSURL URLWithString:@"http://172.20.10.7:8081/index.bundle?platform=ios&dev=true"];
+  //  return [NSURL URLWithString:@"http://172.20.10.7:8081/index.bundle?platform=ios&dev=true"];
   
   #else
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];

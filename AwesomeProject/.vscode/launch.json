@@ -9,6 +9,14 @@
             "cwd": "${workspaceFolder}",
             "type": "reactnative",
             "request": "attach"
-        }
+        },
+
+        {
+            "name": "Debug iOS",
+            "cwd": "${workspaceFolder}",
+            "type": "reactnative",
+            "request": "launch",
+            "platform": "ios"
+        },
     ]
 }

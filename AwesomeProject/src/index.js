@@ -14,11 +14,14 @@ import {createBottomTabNavigator,createMaterialTopTabNavigator} from 'react-navi
 import{createStackNavigator}from 'react-navigation-stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+// tab的4个主视图
 import E_Basic from 'AwesomeProject/src/pages/1_basic_concept/basicConcept';
 import E_Advance from 'AwesomeProject/src/pages/2_advance_concept/advanceConcept';
 import E_UI from 'AwesomeProject/src/pages/3_UI_concept/UIConcept';
 import E_example from 'AwesomeProject/src/pages/4_example_concept/exampleConcept';
 
+import FilmList from 'AwesomeProject/src/pages/4_example_concept/examples/filmList';
+// 图片
 const Basic = 'AwesomeProject/src/images/tabBar_home.png';
 const Basic_selected = 'AwesomeProject/src/images/tabBar_home_selected.png';
 const Advance = 'AwesomeProject/src/images/tabBar_product.png';
@@ -42,6 +45,8 @@ const ImageConfig = {
 
 // 底部tab的整体设置
 const TabOptions = (tabBarTitle, normalImage, selectedImage, navTitle) => {
+    
+    console.log('daf');
 
     const tabBarLabel = tabBarTitle;
     const tabBarIcon = (({ tintColor, focused }) => {
@@ -103,7 +108,7 @@ const AppBottomNavigator = createBottomTabNavigator({
 
 // 创建整个导航
 const AppStackNavigator = createStackNavigator({
-    bottomTabNavigator: {
+    BottomTabNavigator: {
         screen: AppBottomNavigator,
         navigationOptions: {
             headerShown: false,
@@ -127,24 +132,28 @@ const AppStackNavigator = createStackNavigator({
     E_example: {
         screen: E_example,
         navigationOptions: (props) => {//在这里定义每个页面的导航属性，动态配置
-            const {navigation} = props;
-            const {state, setParams} = navigation;
-            const {params} = state;
-            return {
-                title: params.title ? params.title : 'This is Page3',
-                headerRight: (
-                    <Button
-                        title={params.mode === 'edit' ? '保存' : '编辑'}
-                        onPress={()=>{setParams({mode: params.mode === 'edit' ? '' : 'edit'})}
-                            }
-                    />
-                ),
-            }
+            // const {navigation} = props;
+            // const {state, setParams} = navigation;
+            // const {params} = state;
+            // return {
+            //     title: params.title ? params.title : 'This is Page3',
+            //     headerRight: (
+            //         <Button
+            //             title={params.mode === 'edit' ? '保存' : '编辑'}
+            //             onPress={()=>{setParams({mode: params.mode === 'edit' ? '' : 'edit'})}
+            //                 }
+            //         />
+            //     ),
+            // }
         }
+    },
+    FilmList:{
+        screen: FilmList,
     }
+    
 },
     {
-        initialRouteName: "bottomTabNavigator",
+        initialRouteName: "BottomTabNavigator",
         defaultNavigationOptions: ({ navigation, screenProps }) => {
             return {
                 headerTintColor: '#ffffff',
