@@ -1,2 +1,2 @@
 # 5_HybridDevelopment
-关于RN的练习
+关于混合开发的练习
