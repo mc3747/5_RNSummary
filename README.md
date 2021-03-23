@@ -1,2 +1,3 @@
 # 5_HybridDevelopment
-关于混合开发的练习
+1，纯RN开发
+2，项目集成部分RN
