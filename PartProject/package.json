@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "bundle": "^2.1.0",
-    "expo": "^28.0.0",
+    "expo": "^46.0.14",
     "react": "16.4.1 ",
     "react-native": "0.55.4",
     "react-native-page-control": "1.1.1",
